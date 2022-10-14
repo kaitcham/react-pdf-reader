@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ResumeModal from './components/ResumeModal';
 
 const App = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="app">
-      <button>Resume</button>
+      {showModal && <ResumeModal setShowModal={setShowModal} />}
+      <button onClick={() => setShowModal(true)}>Resume</button>
     </div>
   );
 };
