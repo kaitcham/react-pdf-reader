@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  background-color: #f2f2f2;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  margin: 10px;
+  cursor: pointer;
+}
